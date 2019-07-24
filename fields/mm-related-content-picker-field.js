@@ -83,6 +83,6 @@
     });
 
 
-    Alpaca.registerFieldClass("mm-node-picker", Alpaca.Fields.MMRelatedContentPickerField);
+    Alpaca.registerFieldClass("mm-related-content-picker", Alpaca.Fields.MMRelatedContentPickerField);
 
 })(jQuery);
