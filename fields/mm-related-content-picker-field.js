@@ -179,6 +179,10 @@ Alpaca.Fields.MMRelatedContentField = Alpaca.Fields.UploadField.extend({
         // rebind all of the "remove" buttons
         window.setTimeout(function() {
 
+            if (!window.location.href.endsWith('/properties')) {
+                $("[data-fileid]").hide();
+            }
+            
             $("[data-fileid]").change(function() {
                 var target = this;
                 var altTextValue = target.value;
